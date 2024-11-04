@@ -19,6 +19,6 @@ jobs:
         # Only run this step if the branch is main
         if: github.ref == 'refs/heads/main'
         env:
-          deploy_url: ${{ https://api.render.com/deploy/srv-cskgduogph6c73ab7o6g?key=OVby7cmmUlw }}
+          deploy_url: ${{ render.com/deploy/srv-cskgduogph6c73ab7o6g?key=OVby7cmmUlw }}
         run: |
           curl "$deploy_url"
